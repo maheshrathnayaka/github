@@ -16,7 +16,7 @@ public class DBConnManager {
     public DBConnManager(){
         try {
             Class.forName("com.mysql.jdbc.Driver"); // Load JDBC Driver
-            sourceURL=new String("jdbc:mysql://localhost:3309/fyp2015"); // Connection URL
+            sourceURL=new String("jdbc:mysql://localhost:3306/fyp2015"); // Connection URL
         } catch (ClassNotFoundException ex) {
             System.out.println(ex + "------------------------Unable to load database driver classes");
         }
